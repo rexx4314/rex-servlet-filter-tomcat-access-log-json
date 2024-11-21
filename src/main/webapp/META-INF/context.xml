@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+    <Valve className="org.apache.catalina.valves.JsonAccessLogValve"
+           directory="/Users/rex/Documents/REX-WORKSPACE/access-logs"
+           prefix="access_log"
+           suffix=".json"
+           pattern="{
+           &quot;host&quot;:&quot;%h&quot;,
+           &quot;logicalUserName&quot;:&quot;%l&quot;,
+           &quot;user&quot;:&quot;%u&quot;,
+           &quot;time&quot;:&quot;%t&quot;,
+           &quot;request&quot;:&quot;%r&quot;,
+           &quot;statusCode&quot;:&quot;%s&quot;,
+           &quot;size&quot;:&quot;%b&quot;,
+           &quot;tenantId&quot;:&quot;%{tenantId}r&quot;,
+           &quot;userId&quot;:&quot;%{userId}r&quot;
+       }"
+           renameOnRotate="true"
+           rotatable="true"
+           buffered="false"/>
+</Context>

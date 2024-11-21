@@ -1,2 +1,4 @@
-# rex-servlet-filter-tomcat-access-log-json
-rex-servlet-filter-tomcat-access-log-json
+# Servlet Filter for tomcat access log in json format
+## Test version
+- openjdk 1.8
+- tomcat 8.5
